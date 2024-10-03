@@ -12,7 +12,8 @@
         "mhutchie.git-graph",
         "ms-azuretools.vscode-docker",
         "spmeesseman.vscode-taskexplorer",
-        "twxs.cmake"
+        "twxs.cmake",
+        "vadimcn.vscode-lldb"
       ],
       "settings": {
         "[cpp]": {
