@@ -1,9 +1,14 @@
 {
   "name": "C++",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
+  "image": "jairoduarteribeiro/llvm-cmake-ninja:0.0.5",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+      "packages": [
+        "vim"
+      ]
+    }
   },
+  "remoteUser": "dev",
   "customizations": {
     "vscode": {
       "extensions": [
