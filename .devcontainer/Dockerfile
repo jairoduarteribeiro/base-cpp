@@ -1,14 +1,9 @@
-FROM jairoduarteribeiro/llvm-cmake-ninja:0.0.3
+FROM jairoduarteribeiro/llvm-cmake-ninja:0.0.5
 
-RUN export DEBIAN_FRONTEND=noninteractive && \
-    apt-get update && \
+RUN set -eux; \
+    apt-get update; \
     apt-get install -y --no-install-recommends \
-        git \
-        vim \
-        gnupg \
-        openssh-client \
-        bash-completion && \
-    apt-get clean && \
+        vim; \
     rm -rf /var/lib/apt/lists/*
 
 USER dev
